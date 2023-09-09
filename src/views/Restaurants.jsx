@@ -20,7 +20,7 @@ function Restaurants(){
     }
   };
   const handleClickScroll3 = () => {
-    const element = document.getElementById('GHD');
+    const element = document.getElementById('GHDAnchor');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
