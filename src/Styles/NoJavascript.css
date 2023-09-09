@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'sugo_pro_display';
+    src: url('src/assets/fonts/sugo_pro_display/Sugo-Pro-Display-Light-trial.ttf');
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .noscriptcontainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .noscriptmsg {
+    font-family: 'sugo_pro_display', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+    line-height: 1.5;
+    color: white;
+  }
+  
+  .noscriptmsg p {
+    margin-bottom: 10px;
+  }
+  
+  .noscriptmsg a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .noscriptmsgkorean {
+    font-size: 24px;
+    color: #ffdd00;
+  }

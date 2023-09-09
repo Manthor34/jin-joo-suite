@@ -1,0 +1,114 @@
+.logoContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px !important;
+    position: fixed;
+    z-index: 5 !important;
+}
+.bgAccueil {
+    background: white;
+    margin-top: -50px;
+}
+.svg {
+    width: 40%;
+    filter: invert(12%) sepia(10%) saturate(175%) hue-rotate(349deg) brightness(10%) contrast(88%);
+}
+.imgList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgList img {
+    width: 90%;
+}
+.facade {
+    width: 90vw !important;
+    z-index: 9;
+    margin-bottom: 0px;
+}
+.kimbap {
+    width: 50% !important;
+}
+.bibimbapImg {
+    width: 90vw !important;
+    /* margin-right: 5%; */
+    margin-top: -170px;
+}
+.dumplingImg {
+    width: 65vw !important;
+    /* margin-top: 200px; */
+}
+
+.modal-open {
+    overflow: hidden;
+  }
+.logoContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -80px;
+    position: fixed;
+    z-index: 5 !important;
+}
+.bgAccueil {
+    background: white;
+    margin-top: -50px;
+}
+.svg {
+    width: 40%;
+    filter: invert(12%) sepia(10%) saturate(175%) hue-rotate(349deg) brightness(10%) contrast(88%);
+}
+.imgList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgList img {
+    width: 90%;
+}
+.facade {
+    width: 90vw !important;
+    z-index: 9;
+    margin-bottom: 0px;
+}
+.kimbap {
+    width: 50% !important;
+}
+.bibimbapImg {
+    width: 90vw !important;
+    /* margin-right: 5%; */
+    margin-top: -170px;
+}
+.dumplingImg {
+    width: 65vw !important;
+    /* margin-top: 200px; */
+}
+
+.modal-open {
+    overflow: hidden;
+  }
+
+@media (max-width: 768px) {
+    .svg {
+        filter: invert(12%) sepia(10%) saturate(175%) hue-rotate(349deg) brightness(10%) contrast(88%);
+        margin-top: -200px;
+        width: 45%;
+    }
+    .bibimbapImg {
+        margin-top: 50px;
+    }
+    .kimbap {
+        width: 60% !important;
+    }
+    .dumplingImg {
+        width: 80% !important;
+    }
+    .imgList {
+        padding-bottom: 400px;
+    }
+}

@@ -1,0 +1,301 @@
+@import url('./styles/Accueil.css');
+@import url('./styles/Menu.css');
+@import url('./styles/Noodle.css');
+@import url('./styles/Restaurants.css');
+@import url('./styles/NoJavascript.css');
+@import url('./styles/PopUp.css');
+
+
+@font-face {
+  font-family: 'sugo_pro_display';
+  src: url('src/assets/Sugo-Pro-Display-Light.ttf');
+}
+
+@font-face {
+  font-family: 'sugo_pro_display_light';
+  src: url('src/assets/Sugo-Pro-Display-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'sugo_pro_display_true';
+  src: url('src/assets/Sugo-Pro-Display.ttf');
+}
+@font-face {
+  font-family: 'sugo_pro_display_bold';
+  src: url('src/assets/Sugo-Pro-Display-Bold.ttf');
+}
+@font-face {
+  font-family: 'sugo_pro_display_italic';
+  src: url('src/assets/Sugo-Pro-Display-Light-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'sugo_pro_display_regular';
+  src: url('src/assets/Sugo-Pro-Display-Regular.ttf');
+}
+
+.App{
+  width: 100vw !important;
+}
+
+.number,
+.number2 {
+  font-family: 'sugo_pro_display_light';
+}
+
+.number {
+  font-weight: lighter;
+}
+
+.number2 {
+  font-weight: 400;
+}
+
+html {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden !important;
+  width: 100vw !important;
+  margin: 0;
+  background: black;
+  font-family: 'sugo_pro_display';
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+:any-link,
+.navText {
+  text-decoration: none;
+}
+
+.navText {
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
+}
+
+.bimIsArt:hover {
+  cursor: default;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  right: 3%;
+  text-align: right;
+  z-index: 10;
+  top: 80px;
+}
+
+.navText {
+  font-size: 50px;
+}
+
+.navText:hover {
+  color: white;
+}
+
+.invertNav {
+  filter: invert(1);
+  position: fixed;
+  right: 74px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.links {
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.navbar-menu.open .links {
+  opacity: 1;
+  filter: invert(1);
+}
+
+.invertNav {
+  filter: invert(0);
+  right: 0;
+  top: 0;
+}
+
+.navbar-burger {
+  position: fixed;
+  right: 25px;
+  top: 18px;
+  display: block;
+  z-index: 30;
+}
+
+nav {
+  position: relative;
+  justify-content: flex-start;
+  z-index: 10;
+  height: 30px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100 !important;
+}
+
+.navbar-logo {
+  flex-grow: 1;
+}
+
+.navbar-menu {
+  background-color: transparent;
+  text-align: center;
+  top: 60px !important;
+  display: none;
+}
+
+.navbar-menu.open {
+  display: block;
+  font-family: 'sugo_pro_display_light';
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    width: 100vw !important;
+    display: flex;
+    height: 0;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+    background-color: black;
+    filter: invert(1);
+  }
+
+  .navbar-menu :nth-child(1) a{
+    margin-top: 25px;
+  }
+
+  .navbar-menu.open {
+    height: 100vh !important;
+    margin: 0;
+    padding-top: 15px;
+  }
+
+  .navbar-menu ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar-menu li {
+    margin-bottom: 15px;
+  }
+
+  .navText {
+    filter: invert(1);
+  }
+
+  span.navText.bimIsArt.links {
+    filter: opacity(1);
+}
+
+  .navbar-menu a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .navbar-menu a:hover {
+    color: gray;
+  }
+
+  .accueil {
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-menu {
+    position: fixed;
+    right: 25px;
+    top: 80px;
+    text-align: right;
+  }
+}
+
+.navText {
+  font-size: 40px;
+}
+
+nav li {
+  margin-top: 15px;
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 100;
+}
+
+.menu-btn:hover {
+  cursor: pointer;
+}
+
+.menu-btn .bar {
+  width: 30px;
+  height: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn .bar:nth-of-type(2) {
+  top: calc(50% - 9px);
+}
+
+.menu-btn .bar:nth-of-type(3) {
+  top: calc(50% + 9px);
+}
+
+.menu-btn.active .bar:nth-of-type(1),
+.navbar-burger.open .menu-btn .bar:nth-of-type(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-btn.active .bar:nth-of-type(2),
+.navbar-burger.open .menu-btn .bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.menu-btn.active .bar:nth-of-type(3),
+.navbar-burger.open .menu-btn .bar:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.invertNav {
+  filter: invert(1);
+}
+
+.menu-btn {
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* .desktopMenuNav>.navbar-container>.navbar-burger>.menu-btn {
+  background-color: black;
+  border-radius: 5px;
+} */
