@@ -8,6 +8,8 @@ import fleur2 from '../assets/images/fleur2.png';
 import circle from '../assets/images/circle.png';
 import dessin from '../assets/images/dessinBibimbap2.png';
 import bibimbap from '../assets/images/bibimbapDessinMenuSquare.png';
+import logoInsta from '../assets/images/logoInsta.png';
+import logoFb from '../assets/images/logoFb.png';
 
 
 function Noodle(){
@@ -58,7 +60,18 @@ function Noodle(){
           </div>
         </div>
       </div>
-      
+      <div className='footer'>
+        <hr className='hrFooter'/>
+        <p className='HQ'>Woko Holding</p>
+        <div className='contacts'>
+          <p className='contact contact1'>12 avenue Antoine Dutrievoz 69100 Villeurbanne</p>
+          <p className='contact'>communication@woko.fr</p>
+        </div>
+        <div className='socials'>
+          <a className='socialContainer' href="https://www.instagram.com/jinjoo_food/?hl=fr"><img className='social' src={logoInsta}/></a>
+          <a className='socialContainer' href="https://www.facebook.com/jinjoo.food"><img className='social' src={logoFb}/></a>
+        </div>
+      </div>
     </>
 
   );

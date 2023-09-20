@@ -2,8 +2,10 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import opera from '../assets/images/operaFacade.png';
 import ampere from '../assets/images/ampereFacade.png';
-import GHD from '../assets/images/GHDFacade.png';
+import GHD from '../assets/images/GHDFacade.jpg';
 import bellecour from '../assets/images/renduBellecour.jpg';
+import logoInsta from '../assets/images/logoInsta.png';
+import logoFb from '../assets/images/logoFb.png';
 
 function Restaurants(){
 
@@ -129,6 +131,18 @@ function Restaurants(){
           <a className='button' href='https://www.ubereats.com/fr/store/jin-joo-%7C-grand-hotel-dieu/KYkb3ueRW5GHGmw8wQRJWw'>UBER EATS</a>
         </div>
       </div> */}
+    </div>
+    <div className='footer2'>
+      <hr className='hrFooter'/>
+      <p className='HQ'>Woko Holding</p>
+      <div className='contacts'>
+        <p className='contact contact1'>12 avenue Antoine Dutrievoz 69100 Villeurbanne</p>
+        <p className='contact'>communication@woko.fr</p>
+      </div>
+      <div className='socials'>
+        <a className='socialContainer' href="https://www.instagram.com/jinjoo_food/?hl=fr"><img className='social' src={logoInsta}/></a>
+        <a className='socialContainer' href="https://www.facebook.com/jinjoo.food"><img className='social' src={logoFb}/></a>
+      </div>
     </div>
     </>
 

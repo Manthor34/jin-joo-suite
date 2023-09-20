@@ -6,6 +6,8 @@ import freshTea from '../assets/images/chickenImage.jpg';
 import dish from '../assets/images/koreanDish.png';
 import Popup from '../components/Popup';
 import logo from '../assets/images/logoAccueil.png';
+import logoInsta from '../assets/images/logoInsta.png';
+import logoFb from '../assets/images/logoFb.png';
 
 function Accueil() {
   const [isModalDisplayed, setIsModalDisplayed] = useState(false);
@@ -52,7 +54,18 @@ function Accueil() {
         <img className='facade' src={dish} />
     </div>
     </div>
-
+    <div className='footer'>
+      <hr className='hrFooter'/>
+        <p className='HQ'>Woko Holding</p>
+        <div className='contacts'>
+          <p className='contact contact1'>12 avenue Antoine Dutrievoz 69100 Villeurbanne</p>
+          <p className='contact'>communication@woko.fr</p>
+        </div>
+        <div className='socials'>
+          <a className='socialContainer' href="https://www.instagram.com/jinjoo_food/?hl=fr"><img className='social' src={logoInsta}/></a>
+          <a className='socialContainer' href="https://www.facebook.com/jinjoo.food"><img className='social' src={logoFb}/></a>
+        </div>
+    </div>
     </>
 
   );

@@ -4,8 +4,7 @@ const MenuContentDrinks = () => {
   return (
     <>
       <div className='boissons'>
-        <h2 className='teaMargin2 titreBoissons titreBoissons2'>BOISSONS <span className='boisson'>CORÉENNES</span> <span className='prix'></span> </h2>
-        <h3 className='boisson3'>boissons les plus emblématiques de Corée</h3>
+        <h2 className='teaMargin2 titreBoissons titreBoissons2'>KOREAN <span className='boisson'>DRINKS</span> <span className='prix'></span> </h2>
         <h3 className='h3Menu'>BONGBONG <span className='boisson2'>jus de raisin blanc (25cl)</span></h3>
         <h3 className='h3Menu'>NONGHYUP PEACH <span className='boisson2'>boisson à la pêche (24cl)</span></h3>
         <h3 className='h3Menu'>MILKIS <span className='boisson2'>limonade au lait doux et sucré (25cl)</span></h3>

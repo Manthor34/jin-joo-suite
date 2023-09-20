@@ -479,6 +479,9 @@
         overflow-x: scroll;
         margin-right: 20px;
     }
+    .paraEntree {
+        color: black !important;
+    }
         
 } 
 @media (max-width: 768px) {
@@ -629,7 +632,7 @@
     .paraEntree {
         font-size: 20px !important;
         font-weight: lighter;
-        color: #d2d2d2 !important;
+        color: black !important;
     }
     .h2Entree {
         margin-top: 20px;
@@ -734,7 +737,7 @@ h2>.h2Entree{
 }
 
 .active-tab-not-mobile>p{
-    color: #d2d2d2 !important;
+    color: #d2d2d2;
     filter: invert(1);
 }
 

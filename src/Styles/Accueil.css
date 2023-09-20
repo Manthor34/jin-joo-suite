@@ -47,7 +47,7 @@
   }
 .logoContainer {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +91,64 @@
 
 .modal-open {
     overflow: hidden;
-  }
+}
+
+.footer {
+    width: 100vw;
+    height: 200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+.footer2 {
+    width: 100vw;
+    height: 200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+    filter: invert(1);
+}
+.hrFooter {
+    background: black;
+    width: 30%;
+    height: 3px solid black;
+}
+.contacts {
+    display: flex;
+    text-align: center;
+}
+.contact1 {
+    margin-bottom: 0px;
+}
+.socials{
+    display: flex;
+}
+.socialContainer {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 25px;
+    cursor: pointer;
+}
+.social {
+    width: 25px;
+}
+.HQ {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 25px;
+}
+.contact {
+    color: black;
+    font-weight: lighter;
+    margin-top: 0px;
+    font-size: 20px;
+}
 
 @media (max-width: 768px) {
     .svg {
@@ -109,6 +166,9 @@
         width: 80% !important;
     }
     .imgList {
-        padding-bottom: 400px;
+        /* padding-bottom: 400px; */
+    }
+    .contacts {
+        flex-direction: column;
     }
 }
