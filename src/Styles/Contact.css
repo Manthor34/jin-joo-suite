@@ -1,0 +1,32 @@
+.bgContact {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -84px;
+    color: black;
+    text-align: center;
+}
+.contactTitle {
+    padding-top: 70px;
+    font-size: 80px;
+}
+.contactPara {
+    font-size: 25px;
+    font-weight: lighter;
+}
+.contactHr {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .bgContact {
+        /* margin-top: -57px; */
+    }
+    .contactHr {
+        margin-top: 10%;
+        width: 70%;
+    }
+    .contactPara {
+        font-size: 20px;
+    }
+}

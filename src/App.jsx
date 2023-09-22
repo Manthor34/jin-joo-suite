@@ -5,6 +5,8 @@ import Accueil from './views/Accueil';
 import Menu from './views/Menu';
 import Noodle from './views/Noodle';
 import Restaurants from './views/Restaurants';
+import Contact from './views/Contact';
+import Mentions from './views/Mentions';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/noodle" element={<Noodle />} />
           <Route path="/restaurants" element={<Restaurants />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/mentions" element={<Mentions />} />
         </Routes>
       </Router>
     </div>

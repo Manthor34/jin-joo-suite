@@ -8,6 +8,7 @@ const MainNavbar = () => {
   const isNoodlePage = location.pathname === '/noodle';
   const isRestaurantPage = location.pathname === '/restaurants';
   const isMenuPage = location.pathname === '/menu';
+  const isContactPage = location.pathname === '/contact';
   const NavClassnames = classNames({
     restaurantNav: location.pathname === '/restaurants',
     normalNav: location.pathname !== '/restaurants',
@@ -76,6 +77,11 @@ const MainNavbar = () => {
               <li>
                 <Link to="/restaurants" className="links" onClick={toggleMobileMenu}>
                   <span className="navText">NOS RESTAURANTS</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="links" onClick={toggleMobileMenu}>
+                  <span className="navText">CONTACT</span>
                 </Link>
               </li>
           </ul>

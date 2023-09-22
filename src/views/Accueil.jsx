@@ -58,8 +58,8 @@ function Accueil() {
       <hr className='hrFooter'/>
         <p className='HQ'>Woko Holding</p>
         <div className='contacts'>
-          <p className='contact contact1'>12 avenue Antoine Dutrievoz 69100 Villeurbanne</p>
-          <p className='contact'>communication@woko.fr</p>
+          <a className='contact contact1' href="https://jin-joo.fr/#/contact">contact</a>
+          <a className='contact' href="https://jin-joo.fr/#/mentions">mentions légales</a>
         </div>
         <div className='socials'>
           <a className='socialContainer' href="https://www.instagram.com/jinjoo_food/?hl=fr"><img className='social' src={logoInsta}/></a>

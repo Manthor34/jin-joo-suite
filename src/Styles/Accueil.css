@@ -148,6 +148,10 @@
     font-weight: lighter;
     margin-top: 0px;
     font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
