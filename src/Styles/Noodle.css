@@ -1,0 +1,229 @@
+.menuPlaceholder {
+    color: white;
+    font-size: 40px;
+}
+
+.bgNoodle {
+    width: 30vw;
+}
+
+.noodleText {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    color: black;
+    text-align: center;
+    flex-direction: column;
+    background: white;
+    z-index: 9;
+    height: 100%;
+    margin-top: -50px;
+}
+
+.noodleText h1 {
+    font-family: 'sugo_pro_display_regular';
+    font-size: 100px;
+    margin-top: 50px;
+}
+
+.noodleText h2 {
+    font-size: 50px;
+}
+
+.paraTitre {
+    width: 1100px !important;
+    font-size: 33px !important;
+    font-weight: lighter;
+    line-height: 35px;
+}
+
+.paraTitre2 {
+    font-size: 35px !important;
+    margin-top: 10px;   
+}
+
+.noodleText .h2ko2 {
+    font-size: 60px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.noodleText .h2 {
+    font-size: 60px;
+    font-family: 'sugo_pro_display_light';
+    margin-top: 0px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.noodleText p {
+    font-size: 30px;
+    /* font-weight: lighter; */
+    width: 40%;
+}
+
+.introNoodle {
+    margin-bottom: 150px;
+}
+
+.textContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0%;
+    grid-row-gap: 0px;
+}
+
+.bimPara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 350px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: black;
+    height: 350px;
+}
+
+.imgBgBbimbap {
+    position: absolute;
+    width: 60%;
+    z-index: 2 !important;
+    margin-left: 110vw;
+    margin-top: 500px;
+}
+.imgBgBbimbap2 {
+    position: absolute;
+    width: 60%;
+    z-index: 2 !important;
+    margin-right: 110vw;
+    margin-top: 500px;
+}
+
+.bimPara p {
+    width: 90%;
+    font-size: 23px;
+    font-family: 'sugo_pro_display_light';
+    color: #3a3a3a;
+}
+
+.imgPara {
+    height: 60px;
+}
+
+.titrePara {
+    font-size: 40px;
+    margin: 0;
+    font-family: 'sugo_pro_display_light';
+    color: #3a3a3a;
+}
+
+@media (max-width: 1450px) {
+    .imgBgBbimbap {
+        width: 40%;
+    }
+    .imgBgBbimbap2 {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bgNoodle {
+        margin-top: 20px;
+        width: 80vw;
+        margin-bottom: 0;
+    }
+    .noodleText p {
+        width: 60vw;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .noodleText h1 {
+        font-size: 35px !important;
+        margin-top: 50px;
+        line-height: 20px;
+        font-weight: 200;
+    }
+    .noodleText h2 {
+        font-size: 23px !important;
+        margin-bottom: 30px !important;
+        margin-top: 0;
+    }
+    .textContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0%;
+        grid-row-gap: 0px;
+    }
+    .noodleText h2 {
+        font-size: 32px;
+        font-weight: lighter;
+        margin-top: 0px;
+        font-weight: bold;
+        margin-bottom: 150px;
+    }
+    .titrePara {
+        font-size: 29px;
+    }
+    .bimPara {
+        margin: 0;
+        width: 100vw;
+        margin-bottom: 70px !important;
+    }
+    .imgPara {
+        margin: 0;
+        width: 45px;
+        height: 45px;
+    }
+    .paraTitre {
+        font-size: 25px !important;
+        width: 90vw !important;
+        line-height: 25px;
+        font-family: 'sugo_pro_display_light';
+        font-weight: bold;
+            margin-top: 30px !important;
+    }
+    .paraTitre2 {
+        font-size: 23px !important;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        width: 80vw !important;
+    }
+    .noodleText .h2 {
+        margin-top: 20px !important;
+        font-family: 'sugo_pro_display' !important;
+        font-weight: bolder !important;
+        font-size: 25px !important;
+        margin-bottom: 70px !important;
+    }
+    .bimPara {
+        height: 200px;
+        margin-bottom: 150px;
+    }
+
+    .imgBgBbimbap {
+        position: relative;
+        width: 90%;
+        margin-left: 0;
+        margin-top: 50px !important;
+    }
+    .imgBgBbimbap2 {
+        display: none;
+    }
+    .h2ko2 {
+        display: none;
+    }
+}
+
+/* Add the z-index value to .navbar-container rule */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Increase the z-index value to a higher number */
+}

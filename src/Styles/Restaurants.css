@@ -1,0 +1,237 @@
+body {
+    color: white;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.titreRestaurants {
+    width: 100vw;
+    /* position: absolute; */
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 120px;
+    margin-bottom: 0px;
+}
+h2 {
+    font-size: 60px;
+    margin-top: 0px;
+    font-weight: lighter;
+}
+iframe {
+    width: 100vw;
+    height: 800px;
+}
+.mapContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.mapContainer h4{
+    margin-top: 380px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.map {
+    width: 80vw;
+    margin-left: 10vw;
+    height: 900px;
+    background: white;
+}
+.mapRight {
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    width: 80vw;
+    margin-left: 10vw;
+    /* margin-top: 500px; */
+    justify-content: center;
+    /* border-top: 2px solid grey; */
+}
+.mapRight h4 {
+    font-size: 40px;
+    font-family: 'sugo_pro_display_light';
+}
+.mapRight a {
+    width: 15vw;
+    height: 60px;
+    margin: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'sugo_pro_display_light';
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px !important;
+}
+.mapRight a:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.column img {
+    width: 70vw;
+}
+.lieux {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.lieuxRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    width: 30vw;
+}
+.lieuxRight h4 {
+    font-size: 30px;
+    font-family: 'sugo_pro_display_light';
+    margin-bottom: 0px;
+}
+.button {
+    width: 50%;
+    height: 40px;
+    margin: 10px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-family: 'sugo_pro_display_light';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonGrey {
+    background: #363636;
+}
+.lieuxText {
+    font-family: 'sugo_pro_display_light';
+    width: 50%;
+}
+.lieuxText p{
+    font-size: 25px;
+    /* font-weight: lighter; */
+    margin-bottom: 40px;
+}
+.adress{
+    font-size:  25px;
+    margin-top: 0px;
+    font-weight: lighter
+}
+.ampere {
+    margin-bottom: 0;
+}
+.GHD {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.opera {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.opera2, .ampere2, .GHD2{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #opera, #ampere, #GHD{
+        display: none;
+    }
+    .opera2, .ampere2, .GHD2 {
+        display: block;
+        margin-top: 10px;
+        width: 100vw !important;
+    }
+    .mapRight {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .map {
+        width: 100vw;
+        height: 400px;
+        margin-top: 300px;
+    }
+    .lieuxText {
+        width: 60vw;
+        padding: 20px;
+        align-items: center;
+    }
+    .lieuxText p {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .lieuxRight {
+        width: 100vw;
+    }
+    .lieuxRight h4 {
+        font-size: 30px;
+    }
+    .adress {
+        font-size: 23px;
+        color: rgb(177, 177, 177);
+    }
+    .titreRestaurants {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    .mapContainer h4 {
+        margin-top: 300px;
+    }
+    iframe {
+        height: 500px;
+    }
+    .constructPara {
+        font-size: 40px;
+    }
+    .blur2 {
+        height: 80%;
+        backdrop-filter: blur(5px);
+        align-items: center;
+        padding-top: 0;
+    }
+    iframe {
+        height: 150px !important;
+    }
+    .mapRight a {
+        width: 60vw;
+        height: 40px;
+        font-size: 20px;
+        margin-bottom: 5px !important;
+    }
+    .ampere.lieux.GHD {
+        margin-top: -20px;
+    }
+    .lieuxText h4 {
+        line-height: 20px;
+    }
+    .button {
+        width: 60vw;
+        height: 35px;
+        font-size: 25px;
+        margin: 5px;
+    }
+}
+/* test */

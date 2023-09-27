@@ -1,0 +1,92 @@
+.bgContact {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -84px;
+    color: black;
+    text-align: center;
+}
+.contactTitle {
+    padding-top: 70px;
+    font-size: 80px;
+}
+.contactPara {
+    font-size: 25px;
+    font-weight: lighter;
+}
+.contactHr {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .bgContact {
+        /* margin-top: -57px; */
+    }
+    .contactHr {
+        margin-top: 10%;
+        width: 70%;
+    }
+    .contactPara {
+        font-size: 20px;
+    }
+}
+
+
+.contactTitle {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 25px !important;
+}
+
+
+.form-control {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.form-control.is-invalid {
+    border-color: #ff0000;
+}
+
+.invalid-feedback {
+    color: #ff0000;
+    font-size: 0.9em;
+}
+
+.send-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #444;
+}
+
+.send-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
