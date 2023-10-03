@@ -8,6 +8,7 @@ import Popup from '../components/Popup';
 import logo from '../assets/images/logoAccueil.png';
 import logoInsta from '../assets/images/logoInsta.png';
 import logoFb from '../assets/images/logoFb.png';
+import Footer from '../components/MainFooter';
 
 function Accueil() {
   const [isModalDisplayed, setIsModalDisplayed] = useState(false);
@@ -54,18 +55,8 @@ function Accueil() {
         <img className='facade' src={dish} />
     </div>
     </div>
-    <div className='footer'>
-      <hr className='hrFooter'/>
-        <p className='HQ'>Woko Holding</p>
-        <div className='contacts'>
-          <a className='contact contact1' href="https://jin-joo.fr/#/contact">contact</a>
-          <a className='contact' href="https://jin-joo.fr/#/mentions">mentions légales</a>
-        </div>
-        <div className='socials'>
-          <a className='socialContainer' href="https://www.instagram.com/jinjoo_food/?hl=fr"><img className='social' src={logoInsta}/></a>
-          <a className='socialContainer' href="https://www.facebook.com/jinjoo.food"><img className='social' src={logoFb}/></a>
-        </div>
-    </div>
+    <Footer/>
+
     </>
 
   );
