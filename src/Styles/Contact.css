@@ -92,4 +92,14 @@
 .send-button:disabled {
     background-color: #aaa;
     cursor: not-allowed;
+    margin: 0 !important    ;
+
+}
+
+p.contactPara {
+    margin: 0;
+}
+
+hr.contactHr {
+    margin: 0 auto;
 }

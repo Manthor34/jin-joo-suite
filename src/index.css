@@ -299,3 +299,14 @@ nav li {
   background-color: black;
   border-radius: 5px;
 } */
+
+
+.contactAdress{
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+hr.contactHr {
+  margin-bottom: 5vh;
+}
