@@ -29,6 +29,9 @@
     .contactPara {
         font-size: 20px;
     }
+    .form-control {
+        width: 80vw;
+    }
 }
 
 

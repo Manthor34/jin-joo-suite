@@ -142,10 +142,11 @@ const Contact = () => {
                 {isSending && <div style={{ background: '#f0ad4e', padding: '10px', borderRadius: '5px', marginTop: '10px' }}>Envoi en cours...</div>}
                 {errors.sendError && <div style={{ background: 'red', padding: '10px', borderRadius: '5px', marginTop: '10px', color: 'white' }}>{errors.sendError}</div>}
                 {isSent && <div style={{ background: 'green', padding: '10px', borderRadius: '5px', marginTop: '10px', color: 'white' }}>Votre message a été envoyé. Merci!</div>}
-    
-                <hr className='contactHr'/>
-                <p className='contactPara'>communication@woko.fr</p>
-                <p className='contactPara'>12 avenue Antoine Dutrievoz 69100 Villeurbanne</p>
+                <div className='contactAdress'>
+                    <hr className='contactHr'/>
+                    <p className='contactPara'>12 avenue Antoine Dutrievoz 69100 Villeurbanne</p> 
+                </div>
+                
             </div>
             <Footer/>
         </div>
