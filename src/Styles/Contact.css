@@ -1,7 +1,7 @@
 .bgContact {
     background: white;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     margin-top: -84px;
     color: black;
     text-align: center;
@@ -34,6 +34,15 @@
     }
 }
 
+
+hr.contactHr {
+    margin-top: 10PX;
+}
+
+
+button.send-button {
+    margin-bottom: 5vh;
+}
 
 .contactTitle {
     font-size: 2em;
